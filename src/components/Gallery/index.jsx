@@ -8,9 +8,9 @@ return(
 
     <section className="listelogements">
         <ul className="listecartes">
-            {logements.map(({id, cover, name})=>
+            {logements.map(({id, cover, title})=>
             <div key={id}>
-                <Cartelogement cover={cover} name={name} />
+                <Cartelogement cover={cover} title={title} />
 
             </div>)}
         </ul>
