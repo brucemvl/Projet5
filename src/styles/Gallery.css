@@ -58,5 +58,6 @@
         margin-block-start: 1%;
         font-size: 1.1em;
         width: 75%;
+        align-self: baseline;
     }
 }
