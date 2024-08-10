@@ -1,10 +1,9 @@
-import Header from "../../components/Header"
+import "../../styles/Survey.css"
 
 function Survey() {
     return (
-        <div>
-            <Header />
-            <h1>Questionnaire 🧮</h1>
+        <div className="blocpage">
+            
         </div>
     )
 }
