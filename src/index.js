@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Survey from './pages/Survey/'
-import Header from './components/Header'
 import Footer from './components/Footer'
-import Banner from './components/Banner'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-        <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Survey" element={<Survey />} />

@@ -1,0 +1,13 @@
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 92%;
+    gap: 50px;
+    align-self: center;
+}
