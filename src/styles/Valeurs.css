@@ -1,0 +1,11 @@
+.valeurs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.valeurs div {
+    background-color: #FF6060;
+    height: 54px;
+}
