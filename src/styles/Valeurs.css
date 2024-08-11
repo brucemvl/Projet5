@@ -27,3 +27,9 @@
 width: 24px;
 height: 13px;
 }
+
+.dropdown {
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+}
