@@ -16,7 +16,12 @@ dropdown.style.display = "none"
 
 
 icons[i].addEventListener("click", ()=>{
+   if(dropdown.style.display === "none"){
     dropdown.style.display = "flex"
+   }
+   else {
+    dropdown.style.display = "none"
+   }
 })
     }
 
