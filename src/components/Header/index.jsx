@@ -14,6 +14,7 @@ function souligne(element){
 
 function Header() {
 
+
     
     return (
 
@@ -21,8 +22,8 @@ function Header() {
             <img src={logo} alt='logo'/>
         <nav>
             <ul>
-                <li className='accueil' /*onClick={()=> souligne(accueil)}*/><Link to="/">Accueil</Link></li>
-                <li className='apropos' /*onClick={()=> souligne(apropos)}*/><Link to="/Survey">A Propos</Link></li>
+                <li className='accueil'><Link to="/">Accueil</Link></li>
+                <li className='apropos' /*onClick={()=> souligne(apropos)}*/><Link to="/Apropos">A Propos</Link></li>
              </ul>
         </nav>
         </header>

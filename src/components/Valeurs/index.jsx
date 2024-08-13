@@ -8,7 +8,7 @@ function Valeurs(){
 
         const [isOpen, setIsOpen] = useState(false)
 
-        return isOpen ? (
+        return ( isOpen ? (
             Listvaleurs.map(({titre, texte})=>
             <div className="drop">
             <div className="bar">
@@ -21,13 +21,13 @@ function Valeurs(){
         </div>
         </div>
             
-)    
-        ) : (
+) 
+        ) : 
             Listvaleurs.map(({titre})=>
             <div className="drop">
                 <div className="bar">
                     <p className="bar__titre">{titre}</p>
-            <img src={arrow} alt="icone" className="bar__icon" onClick={() => setIsOpen(true, titre)}/>
+            <img src={arrow} alt="icone" className="bar__icon" onClick={() => setIsOpen(true)}/>
             </div>
             </div>
             )
@@ -37,3 +37,4 @@ function Valeurs(){
 }
 
 export default Valeurs
+
