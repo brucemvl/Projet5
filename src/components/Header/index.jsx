@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from "../../assets/logoheader.png"
 import "../../styles/Header.css"
  
@@ -22,8 +22,8 @@ function Header() {
             <img src={logo} alt='logo'/>
         <nav>
             <ul>
-                <li className='accueil'><Link to="/">Accueil</Link></li>
-                <li className='apropos' /*onClick={()=> souligne(apropos)}*/><Link to="/Apropos">A Propos</Link></li>
+                <li className='accueil'><NavLink to="/">Accueil</NavLink></li>
+                <li className='apropos' /*onClick={()=> souligne(apropos)}*/><NavLink to="/Apropos">A Propos</NavLink></li>
              </ul>
         </nav>
         </header>
