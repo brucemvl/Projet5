@@ -6,6 +6,10 @@ header {
     align-self: center;
 }
 
+.logo {
+
+}
+
 ul {
     display: flex;
     gap: 55px;
@@ -27,4 +31,15 @@ a {
 
 a.active{
     text-decoration: underline;
+}
+
+@media (max-width: 767px){
+    .logo {
+        width: 35%;
+    }
+
+    header ul {
+        width: 90%;
+        gap: 30px;
+    }
 }

@@ -19,7 +19,7 @@ function Header() {
     return (
 
         <header>
-            <img src={logo} alt='logo'/>
+            <img src={logo} alt='logo' className='logo'/>
         <nav>
             <ul>
                 <li className='accueil'><NavLink to="/">Accueil</NavLink></li>

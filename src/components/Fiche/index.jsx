@@ -3,7 +3,7 @@ import "../../styles/Fiche.css"
 //import Cartelogement from "../Gallery/Cartelogement"
 //import { logements } from "../../datas/logements"
 
-function Fiche({cover, title, location, host, hostpicture}){
+function Fiche({cover, title, location, host, hostpicture, tags}){
 
     
     return (
@@ -13,7 +13,8 @@ function Fiche({cover, title, location, host, hostpicture}){
                 <div className="titre">
                     <p className="name">{title}</p>
                     <p className="localisation">{location}</p>
-                    <div className="tags"></div>
+                    <div className="hashtags">
+                    </div>
                 </div>
 
                 <div className="hoteandrating">
