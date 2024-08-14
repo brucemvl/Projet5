@@ -67,7 +67,7 @@ a {
         margin-block-start: 1%;
         font-size: 1.4em;
         width: 75%;
-        align-self: baseline;
+        align-self: center;
     }
 }
 
@@ -79,7 +79,7 @@ a {
         align-items: center;
     }
     .conteneur__carte {
-        justify-content: center;
+        width: 90%;
     }
 
     .carte {
@@ -87,7 +87,7 @@ a {
     }
 
     .carte__txt {
-        font-size: 1.5em;
+        font-size: 1.4em;
         align-self: center;
     }
 
