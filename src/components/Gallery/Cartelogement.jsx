@@ -1,12 +1,14 @@
 import "../../styles/Gallery.css"
+import { Link } from "react-router-dom"
+
 
 function Cartelogement({title, cover, id}){
     return(
     
-        <li key={id} className="carte" >
+        <Link to="/Fiche"><li key={id} className="carte" >
 <img className="carte__img" src={cover} alt={title + "photo"} />
 <p className="carte__txt">{title}</p>
-        </li>
+        </li></Link>
 )
     
 }

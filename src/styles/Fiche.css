@@ -1,0 +1,51 @@
+.fiche {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infos {
+
+}
+
+.titre {
+
+}
+
+.name {
+    color: #FF6060;
+
+}
+
+.localisation {
+
+}
+
+.hote {
+    color: #FF6060;
+
+}
+ .tagsandrating {
+
+ }
+
+ .collapse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+    height: 52px;
+    width: 100%;
+
+ }
+
+ .collapse__description {
+    background-color: #FF6060;
+    border-radius: 10px;
+
+ }
+
+ .collapse__equipement {
+    background-color: #FF6060;
+    border-radius: 10px;
+
+ }
