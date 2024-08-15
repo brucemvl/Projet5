@@ -4,8 +4,9 @@ import "../../styles/Fiche.css"
 //import { logements } from "../../datas/logements"
 
 function Fiche({cover, title, location, host, hostpicture, tags}){
+    const motscles = tags.map((tag)=>
+    <div className="tag">{tag}</div>)
 
-    
     return (
         <section className="fiche">
             <img className="fiche__img" alt="logement" src={cover} />
@@ -13,7 +14,7 @@ function Fiche({cover, title, location, host, hostpicture, tags}){
                 <div className="titre">
                     <p className="name">{title}</p>
                     <p className="localisation">{location}</p>
-                    <div className="hashtags">
+                    <div className="tags">{motscles}
                     </div>
                 </div>
 
