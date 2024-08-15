@@ -4,9 +4,14 @@ import "../../styles/Fiche.css"
 //import { logements } from "../../datas/logements"
 import arrow from "../../assets/Vector.png"
 
-function Fiche({cover, title, location, host, hostpicture, tags}){
+function Fiche({cover, title, location, host, hostpicture, tags, rating}){
     const motscles = tags.map((tag)=>
     <div className="tag">{tag}</div>)
+
+    const range = [1, 2, 3, 4, 5]
+    const note = range.map((num)=>(
+        <span className={rating > num ? "on": ""}>★</span>
+    ))
 
     return (
         <section className="fiche">
@@ -21,7 +26,10 @@ function Fiche({cover, title, location, host, hostpicture, tags}){
                 <div className="hoteandrating">
                     <p className="hote__name">{host}</p>
                     <img className="hote__img" alt="hote" src={hostpicture}/>
-                    <div className="rating"></div>
+                    <div className="rating">
+                        {note}
+                        
+                        </div>               
                 </div>                    
             </div>        
                 <div className="collapse">
