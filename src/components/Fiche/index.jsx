@@ -2,6 +2,7 @@
 import "../../styles/Fiche.css"
 //import Cartelogement from "../Gallery/Cartelogement"
 //import { logements } from "../../datas/logements"
+import arrow from "../../assets/Vector.png"
 
 function Fiche({cover, title, location, host, hostpicture, tags}){
     const motscles = tags.map((tag)=>
@@ -14,8 +15,7 @@ function Fiche({cover, title, location, host, hostpicture, tags}){
                 <div className="titre">
                     <p className="name">{title}</p>
                     <p className="localisation">{location}</p>
-                    <div className="tags">{motscles}
-                    </div>
+                    <div className="tags">{motscles}</div>
                 </div>
 
                 <div className="hoteandrating">
@@ -25,8 +25,8 @@ function Fiche({cover, title, location, host, hostpicture, tags}){
                 </div>                    
             </div>        
                 <div className="collapse">
-                    <div className="collapse__description"></div>
-                    <div className="collapse__equipement"></div>
+                    <div className="collapse__description"><p>Description</p><img src={arrow} alt="icone" className="collapse__icon" /></div>
+                    <div className="collapse__equipement"><p>Equipement</p><img src={arrow} alt="icone" className="collapse__icon" /></div>
                 </div>
 
             
