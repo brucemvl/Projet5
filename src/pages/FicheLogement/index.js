@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom"
 import Fiche from "../../components/Fiche"
 import { logements } from "../../datas/logements"
 
-function FicheLogement({cover}){
+function FicheLogement(){
 const location = useLocation()
 console.log(location.state.id.id)
 

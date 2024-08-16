@@ -1,40 +1,35 @@
 import "../../styles/Valeurs.css"
 import arrow from "../../assets/Vector.png"
 import { useState } from "react"
-import { Listvaleurs } from "../../datas/ListValeurs"
+//import { Listvaleurs } from "../../datas/ListValeurs"
 
 
-function Valeurs(){
+function Collapse({titre, texte}){
 
-        const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setisopen] = useState(false)
 
-        return ( isOpen ? (
-            Listvaleurs.map(({titre, texte})=>
-            <div className="drop">
-            <div className="bar">
-                <p className="bar__titre">{titre}</p>
-        <img src={arrow} alt="icone" className="bar__icon" onClick={() => setIsOpen(false)}/>
-        </div>
+    const openContent = ()=> {
+        setisopen (! isOpen)
+    }
+
+
+    return (
     
-        <div className="dropdown">
-            <p>{texte}</p>
-        </div>
-        </div>
-            
-) 
-        ) : 
-            Listvaleurs.map(({titre})=>
-            <div className="drop">
-                <div className="bar">
-                    <p className="bar__titre">{titre}</p>
-            <img src={arrow} alt="icone" className="bar__icon" onClick={() => setIsOpen(true)}/>
-            </div>
-            </div>
-            )
-        )
+        <div className="drop">
+        <div className="bar">
+            <p className="bar__titre">{titre}</p>
+    <img src={arrow} alt="icone" className="bar__icon" onClick={openContent} />
+    </div>
+{ isOpen &&
+    <div className="dropdown">
+       <p>{texte}</p>
+    </div>}
+    </div>
+        
+)
 
-    
+
 }
 
-export default Valeurs
+export default Collapse
 
