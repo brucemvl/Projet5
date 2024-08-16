@@ -1,7 +1,6 @@
-import "../../styles/Valeurs.css"
+import "../../styles/Collapse.css"
 import arrow from "../../assets/Vector.png"
 import { useState } from "react"
-//import { Listvaleurs } from "../../datas/ListValeurs"
 
 
 function Collapse({titre, texte}){
@@ -15,13 +14,13 @@ function Collapse({titre, texte}){
 
     return (
     
-        <div className="drop">
-        <div className="bar">
-            <p className="bar__titre">{titre}</p>
-    <img src={arrow} alt="icone" className="bar__icon" onClick={openContent} />
+        <div className="collapse">
+        <div className="collapse__bar">
+            <p className="collapse__titre">{titre}</p>
+    <img src={arrow} alt="icone" className="collapse__icon" onClick={openContent} />
     </div>
 { isOpen &&
-    <div className="dropdown">
+    <div className="collapse__dropdown">
        <p>{texte}</p>
     </div>}
     </div>

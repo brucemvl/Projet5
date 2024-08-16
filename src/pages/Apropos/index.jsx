@@ -1,6 +1,6 @@
 import "../../styles/Apropos.css"
 import Banner2 from "../../components/Banner2"
-import Collapse from "../../components/Valeurs"
+import Collapse from "../../components/Collapse"
 import { Listvaleurs } from "../../datas/ListValeurs"
 
 function Apropos() {

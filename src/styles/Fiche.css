@@ -94,7 +94,7 @@ span {
     color: #FF6060;
 }
 
- .collapse {
+ .conteneurcollapse {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 75px;
@@ -103,14 +103,3 @@ span {
 
  }
 
- .collapse div {
-    display: flex;
-    align-items: center;
-    background-color: #FF6060;
-    border-radius: 10px;
-    color: white;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 0px 20px;
-    justify-content: space-between;
-}
