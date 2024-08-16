@@ -6,6 +6,7 @@ import { useState } from "react"
 function Collapse({titre, texte}){
 
     const [isOpen, setisopen] = useState(false)
+  
 
     const openContent = ()=> {
         setisopen (! isOpen)

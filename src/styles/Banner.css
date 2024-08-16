@@ -1,6 +1,6 @@
 .banniere {
     width: 100%;
-    height: 223px;
+    height: 13em;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -35,13 +35,23 @@
 }
 
 @media(max-width: 1024px){
+
+    .banniere {
+        height: 10em;
+    }
+
     .banniere__titre {
         font-size: 2.5em;
     }
 }
 
 @media(max-width: 767px){
+
+    .banniere {
+        height: 8em;
+    }
     .banniere__titre {
         font-size: 1.8em;
+        padding: 50px;
     }
 }

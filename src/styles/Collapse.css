@@ -14,7 +14,7 @@
     color: white;
     font-weight: 700;
     font-size: 1em;
-    line-height: 34.22px
+    line-height: 34.22px;
 }
 
 .collapse__icon {
@@ -22,13 +22,21 @@ width: 1.5em;
 height: 1em;
 }
 
+.collapse__icon:hover {
+    cursor: pointer;
+}
+
 .collapse__icon:active {
     transform: rotate(180deg);
+    transition-duration: 0.3s;
 }
 
 .collapse__dropdown {
     transition-duration: 2s;
     padding-inline: 1em;
+    animation: slidein 0.3s ease-out;
+    position: relative;
+    z-index: -1;
 }
 
 .collapse__dropdown P {
@@ -46,4 +54,18 @@ height: 1em;
         width: 1em;
         height: 0.6em;
     }
+}
+
+@keyframes slidein {
+    from{
+        transform: translateY(-100%);
+    }
+
+}
+
+@keyframes slideout {
+    to{
+        transform: translateY(-100%);
+    }
+    
 }
