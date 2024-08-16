@@ -13,12 +13,12 @@ console.log(logement)
 
 
     return (
-        <div>
-        <Fiche cover={logement.cover} title={logement.title} location={logement.location} host={logement.host.name} hostpicture={logement.host.picture} tags={logement.tags} rating={logement.rating}/>
-        
+        <div className="blocpage">
+        <Fiche cover={logement.cover} title={logement.title} location={logement.location} host={logement.host.name} hostpicture={logement.host.picture} tags={logement.tags} rating={logement.rating} />
+        < div className="conteneur__collapse">
         <Collapse titre="Description" texte={logement.description}/>
-        <Collapse titre="Equipement" texte={logement.equipments}/>
-        
+        <Collapse titre="Equipement" texte={logement.equipments.map((equipement)=> <li>{equipement}</li>)}/>
+        </div>
         </div>
     )
 }

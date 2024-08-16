@@ -21,7 +21,7 @@ function Collapse({titre, texte}){
     </div>
 { isOpen &&
     <div className="collapse__dropdown">
-       <p>{texte}</p>
+       <p className="collapse_dropdowntexte">{texte}</p>
     </div>}
     </div>
         

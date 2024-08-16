@@ -3,7 +3,7 @@ import Gallery from "../../components/Gallery/index.jsx"
 import "../../styles/Home.css"
 
 function Home() {
-  return <div className="blocpage">
+  return <div className="blocpage__home">
     <Banner />
     <Gallery />
 

@@ -9,6 +9,12 @@
     flex-direction: column;
     justify-content: center;
     width: 92%;
-    gap: 50px;
     align-self: center;
+}
+
+.conteneur__col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
 }

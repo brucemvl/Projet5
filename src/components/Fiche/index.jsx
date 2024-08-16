@@ -2,7 +2,6 @@
 import "../../styles/Fiche.css"
 //import Cartelogement from "../Gallery/Cartelogement"
 //import { logements } from "../../datas/logements"
-import arrow from "../../assets/Vector.png"
 
 function Fiche({cover, title, location, host, hostpicture, tags, rating}){
     const motscles = tags.map((tag)=>
@@ -32,12 +31,6 @@ function Fiche({cover, title, location, host, hostpicture, tags, rating}){
                         </div>               
                 </div>                    
             </div>       
-                <div className="collapse">
-                    <div className="collapse__description"><p>Description</p><img src={arrow} alt="icone" className="collapse__icon" /></div>
-                    <div className="collapse__equipement"><p>Equipement</p><img src={arrow} alt="icone" className="collapse__icon" /></div>
-                </div>
-
-            
         </section>
     )
 

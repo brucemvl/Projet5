@@ -1,7 +1,13 @@
+.blocpage {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
 .fiche {
     display: flex;
     flex-direction: column;
-    width: 92%;
+    width: 100%;
     align-self: center ;
     gap: 20px;
     font-family: "Montserrat", sans-serif;
@@ -94,11 +100,10 @@ span {
     color: #FF6060;
 }
 
- .conteneurcollapse {
+ .conteneur__collapse {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 75px;
-    height: 52px;
     width: 100%;
 
  }

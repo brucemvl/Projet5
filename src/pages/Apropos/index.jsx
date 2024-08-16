@@ -18,10 +18,12 @@ console.log(texte)
     return (
         <div className="blocpage">
             <Banner2 />
+            <div className="conteneur__col">
             <Collapse titre={titre[0]} texte={texte[0]} />
             <Collapse titre={titre[1]} texte={texte[1]} />            
             <Collapse titre={titre[2]} texte={texte[2]} />
             <Collapse titre={titre[3]} texte={texte[3]} />
+            </div>
         </div>
     )
 }
