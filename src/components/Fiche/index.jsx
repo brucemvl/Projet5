@@ -23,8 +23,10 @@ function Fiche({cover, title, location, host, hostpicture, tags, rating}){
                 </div>
 
                 <div className="hoteandrating">
+                    <div className="hote">
                     <p className="hote__name">{host}</p>
                     <img className="hote__img" alt="hote" src={hostpicture}/>
+                    </div>
                     <div className="rating">
                         {note}
                         
