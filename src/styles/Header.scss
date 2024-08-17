@@ -9,20 +9,20 @@ header {
         display: flex;
         gap: 55px;
 
-        .header__li {
+        .header__navbar__li {
             list-style-type: none;
            
-           .header__link {  
+           .header__navbar__li__link {  
                 text-decoration: none;
                 color: black;
 
             }
 
-            .header__link.active{
+            .header__navbar__li__link.active{
                 text-decoration: underline;
             }
 
-            .header__link:hover {
+            .header__navbar__li__link:hover {
                 text-decoration: underline;
             }
 
@@ -34,18 +34,13 @@ header {
 }
 
 @media (max-width: 767px){
-
+header {
+    .header__logo {
+        width: 35%;
+    }
     .header__navbar {
         width: 90%;
         gap: 30px;
     }
 }
-/*
-@media (max-width: 767px){
-    .header__logo {
-        width: 35%;
-    }}
-
-    
-    
-}*/
+}

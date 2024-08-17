@@ -4,15 +4,18 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.blocpage {
+.blocpage__apropos {
     width: 92%;
     align-self: center;
+    margin-bottom: 2em;
+
+    .conteneur__col {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 2em;
+    }
 }
 
-.conteneur__col {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-}
+
 

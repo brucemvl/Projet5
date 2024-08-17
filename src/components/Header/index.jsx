@@ -22,8 +22,8 @@ function Header() {
             <img src={logo} alt='logo' className='header__logo'/>
         <nav>
             <ul className='header__navbar'>
-                <li className='header__li'><NavLink className="header__link" to="/">Accueil</NavLink></li>
-                <li className='header__li' /*onClick={()=> souligne(apropos)}*/><NavLink className="header__link" to="/Apropos">A Propos</NavLink></li>
+                <li className='header__navbar__li'><NavLink className="header__navbar__li__link" to="/">Accueil</NavLink></li>
+                <li className='header__navbar__li' /*onClick={()=> souligne(apropos)}*/><NavLink className="header__navbar__li__link" to="/Apropos">A Propos</NavLink></li>
              </ul>
         </nav>
         </header>

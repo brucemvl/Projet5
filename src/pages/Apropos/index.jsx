@@ -16,7 +16,7 @@ console.log(texte)
 //const titre = Listvaleurs.find((valeur)=> valeur.titre === location.titre)
 
     return (
-        <div className="blocpage">
+        <div className="blocpage__apropos">
             <Banner2 />
             <div className="conteneur__col">
             <Collapse titre={titre[0]} texte={texte[0]} />
