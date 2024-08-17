@@ -1,0 +1,41 @@
+.banniere2 {
+    width: 100%;
+    height: 12em;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .banniere2__background {
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        filter: brightness(0.7);
+    
+        .banniere2__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+           
+        }
+    
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .banniere2 {
+        height: 10em;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    .banniere2 {
+        height: 8em;
+    }
+    
+}

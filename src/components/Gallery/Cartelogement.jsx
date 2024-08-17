@@ -1,4 +1,4 @@
-import "../../styles/Gallery.css"
+import "../../styles/Gallery.scss"
 import { Link } from "react-router-dom"
 
 

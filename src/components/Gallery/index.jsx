@@ -1,6 +1,6 @@
 import { logements } from "../../datas/logements"
 import Cartelogement from "./Cartelogement"
-import "../../styles/Gallery.css"
+import "../../styles/Gallery.scss"
 
 function Gallery(){
 
