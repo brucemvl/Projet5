@@ -1,0 +1,164 @@
+.blocpage__fiche {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    width: 92%;
+    align-self: center;
+}
+
+.fiche {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center ;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin: 30px;
+
+    .fiche__img {
+        width: 100%;
+        height: 30em;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .name {
+            color: #FF6060;
+            font-size: 2.5em;
+            margin-block-end: 0.5em;
+            margin-block-start: 0;
+        
+        }
+        
+        .localisation {
+            margin-block-start: 0.5em;
+            font-weight: 500;
+        
+        }
+        
+        .tags {
+            display: flex;
+            gap: 10px;
+    
+            .tag {
+                display: flex;
+                background-color: #FF6060;
+                color: white;
+                width: 10.5em;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 500;
+                height: 2em;
+            
+            }
+        
+        }
+        .hoteandrating {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        align-self: end;
+    
+        .hote {
+            display: flex;
+            gap: 10px;
+        
+            .hote__name {
+                color: #FF6060;
+                font-weight: 500;
+                text-align: right;
+                width: 6em;
+            
+            
+            }
+            
+            .hote__img {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
+        }
+    
+        .rating {
+            align-self: flex-end;
+        
+            span {
+                font-size: 2em;
+                color: #E3E3E3;
+            
+            }
+
+            .on {
+                color: #FF6060;
+            }
+        }
+    }
+    
+    }
+    
+}
+
+
+
+ .conteneur__collapse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+    width: 100%;
+
+ }
+
+ @media(max-width: 767px){
+    .fiche {
+        margin: 30px 30px 0px 30px;
+
+        .fiche__img {
+            height: 20em;
+        }
+
+        .name {
+            font-size: 2em;
+        }
+    
+        .infos {
+            flex-direction: column;
+            gap: 10px;
+        
+
+        .hoteandrating {
+            flex-direction: row-reverse;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+    
+            .hote {
+                flex-direction: row-reverse;
+                .hote__img {
+                    order: -1;
+                }
+            }
+    
+        
+            .rating {
+                align-self: center;
+            }
+        }
+    }
+
+    }
+
+
+
+    .conteneur__collapse {
+        gap: 30px;
+    }
+
+ }
+

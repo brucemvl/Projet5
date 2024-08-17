@@ -1,4 +1,4 @@
-.blocpage {
+.blocpage__fiche {
     display: flex;
     flex-direction: column;
     margin-bottom: 2em;

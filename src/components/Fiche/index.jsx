@@ -1,5 +1,5 @@
 //import { useEffect } from "react"
-import "../../styles/Fiche.css"
+import "../../styles/Fiche.scss"
 //import Cartelogement from "../Gallery/Cartelogement"
 //import { logements } from "../../datas/logements"
 

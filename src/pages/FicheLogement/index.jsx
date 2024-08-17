@@ -13,7 +13,7 @@ console.log(logement)
 
 
     return (
-        <div className="blocpage">
+        <div className="blocpage__fiche">
         <Fiche cover={logement.cover} title={logement.title} location={logement.location} host={logement.host.name} hostpicture={logement.host.picture} tags={logement.tags} rating={logement.rating} />
         < div className="conteneur__collapse">
         <Collapse titre="Description" texte={logement.description}/>
