@@ -19,11 +19,11 @@ function Header() {
     return (
 
         <header>
-            <img src={logo} alt='logo' className='logo'/>
+            <img src={logo} alt='logo' className='header__logo'/>
         <nav>
-            <ul>
-                <li className='accueil'><NavLink to="/">Accueil</NavLink></li>
-                <li className='apropos' /*onClick={()=> souligne(apropos)}*/><NavLink to="/Apropos">A Propos</NavLink></li>
+            <ul className='header__navbar'>
+                <li className='header__li'><NavLink className="header__link" to="/">Accueil</NavLink></li>
+                <li className='header__li' /*onClick={()=> souligne(apropos)}*/><NavLink className="header__link" to="/Apropos">A Propos</NavLink></li>
              </ul>
         </nav>
         </header>

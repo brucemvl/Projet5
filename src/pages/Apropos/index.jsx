@@ -1,4 +1,4 @@
-import "../../styles/Apropos.css"
+import "../../styles/Apropos.scss"
 import Banner2 from "../../components/Banner2"
 import Collapse from "../../components/Collapse"
 import { Listvaleurs } from "../../datas/ListValeurs"

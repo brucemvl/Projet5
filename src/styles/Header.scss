@@ -5,41 +5,47 @@ header {
     width: 92%;
     align-self: center;
 
-    ul {
+    .header__navbar {
         display: flex;
         gap: 55px;
 
-        li {
+        .header__li {
             list-style-type: none;
-        
            
-           a {  
+           .header__link {  
                 text-decoration: none;
                 color: black;
-            
+
             }
+
+            .header__link.active{
+                text-decoration: underline;
+            }
+
+            .header__link:hover {
+                text-decoration: underline;
+            }
+
+            
         }
     }
+    
+    
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-a.active{
-    text-decoration: underline;
-}
-
-
-
 
 @media (max-width: 767px){
-    .logo {
-        width: 35%;
-    }
 
-    nav ul {
+    .header__navbar {
         width: 90%;
         gap: 30px;
     }
 }
+/*
+@media (max-width: 767px){
+    .header__logo {
+        width: 35%;
+    }}
+
+    
+    
+}*/

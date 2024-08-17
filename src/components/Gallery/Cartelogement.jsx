@@ -8,7 +8,7 @@ function Cartelogement({title, cover, id}){
         }
     return(
     
-        <Link to="/Fiche" state={state}><li key={id} className="carte" >
+        <Link className="lien" to="/Fiche" state={state}><li key={id} className="carte" >
 <img className="carte__img" src={cover} alt={title + "photo"} />
 <p className="carte__txt">{title}</p>
         </li></Link>
