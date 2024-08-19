@@ -20,8 +20,8 @@
         width: 100%;
         height: 30em;
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
 
     .fiche__carrousel__img {
         width: 100%;
@@ -47,6 +47,14 @@
 
     .fiche__carrousel__buttons {
         position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .fiche__carrousel__buttons img:hover{
+        cursor: pointer;
     }
 
     }

@@ -1,4 +1,6 @@
 import { useState } from "react"
+import Vectorleft from "../../assets/Vectorleft.png"
+import Vectorright from "../../assets/Vectorright.png"
 
 function Carrousel({pictures}){
 console.log(pictures)
@@ -32,8 +34,8 @@ return (
     
 ))}
 <div className="fiche__carrousel__buttons">
-    <button onClick={prev}>Prev</button>
-    <button onClick={next}>Next</button>
+    <img  alt="arrowleft" onClick={prev} src={Vectorleft}/>
+    <img  alt="arrowright" onClick={next} src={Vectorright}/>
     </div>
     </div>
 
