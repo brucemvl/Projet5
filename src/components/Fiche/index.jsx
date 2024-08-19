@@ -2,8 +2,10 @@
 import "../../styles/Fiche.scss"
 //import Cartelogement from "../Gallery/Cartelogement"
 //import { logements } from "../../datas/logements"
+import Carrousel from "../Carrousel"
 
-function Fiche({cover, title, location, host, hostpicture, tags, rating}){
+
+function Fiche({cover, title, location, host, hostpicture, tags, rating, pictures}){
     const motscles = tags.map((tag)=>
     <div className="tag">{tag}</div>)
 
@@ -14,7 +16,7 @@ function Fiche({cover, title, location, host, hostpicture, tags, rating}){
 
     return (
         <section className="fiche">
-            <img className="fiche__img" alt="logement" src={cover} />
+            <Carrousel pictures={pictures}/>
             <div className="infos">
                 <div className="titre">
                     <p className="name">{title}</p>
