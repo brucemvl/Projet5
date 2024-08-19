@@ -31,6 +31,7 @@
         position: absolute;
         inset: 0;
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
     
     .fiche__carrousel__img__active {
@@ -41,6 +42,7 @@
         position: absolute;
         inset: 0;
         opacity: 1;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .fiche__carrousel__buttons {

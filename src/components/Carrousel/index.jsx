@@ -14,6 +14,13 @@ const next = ()=>{
     setCurrentPicture((currentPicture + 1) % pictures.length)
 }
 
+const prev = ()=>{
+    if(currentPicture < 0){
+        setCurrentPicture(pictures.length -1)
+    }
+    setCurrentPicture((currentPicture - 1) )
+}
+
 return (
     <div className="fiche__carrousel">
 
@@ -25,7 +32,7 @@ return (
     
 ))}
 <div className="fiche__carrousel__buttons">
-    <button>Prev</button>
+    <button onClick={prev}>Prev</button>
     <button onClick={next}>Next</button>
     </div>
     </div>
