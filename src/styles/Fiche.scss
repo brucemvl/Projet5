@@ -57,6 +57,19 @@
         cursor: pointer;
     }
 
+    .fiche__carrousel__indice {
+        z-index: 0;
+        color: white;
+        align-self: flex-end;
+        position: absolute;
+        left: 50%;
+        margin-bottom: 0.5rem;
+        transform: translateX(-50%);
+}
+
+
+    }
+
     }
     .infos {
         display: flex;
@@ -139,7 +152,7 @@
     
     }
     
-}
+
 
 
  .conteneur__collapse {

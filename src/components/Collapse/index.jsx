@@ -1,18 +1,33 @@
 import "../../styles/Collapse.scss"
 import arrow from "../../assets/Vector.png"
-import { useState } from "react"
+import React, { useState } from "react"
 
 
 function Collapse({titre, texte}){
-
-
-    
-    
     const [isOpen, setisopen] = useState(false)
-  
 
-    const openContent = ()=> {
-        setisopen (! isOpen)    }
+const [rotate, setRotation] = useState("active")
+
+
+    
+
+    
+    
+
+    const openContent =()=> {
+        setisopen (! isOpen) 
+        setRotation (! rotate)
+        console.log(rotate)
+
+        if(rotate === true){
+console.log("okkk")        }
+
+        }
+        
+    
+       
+    
+    
 
 
     return (
@@ -20,7 +35,7 @@ function Collapse({titre, texte}){
         <div className="collapse">
         <div className="collapse__bar">
             <p className="collapse__titre">{titre}</p>
-    <img src={arrow} alt="icone" className="collapse__icon" onClick={openContent} />
+    <img src={arrow} alt="icone" className={rotate} onClick={openContent} />
     </div>
 { isOpen &&
     <div className="collapse__dropdown">
@@ -30,8 +45,5 @@ function Collapse({titre, texte}){
         
 )
 
-
 }
-
 export default Collapse
-
