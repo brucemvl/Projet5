@@ -6,7 +6,7 @@ import React, { useState } from "react"
 function Collapse({titre, texte}){
     const [isOpen, setisopen] = useState(false)
 
-const [rotate, setRotation] = useState("active")
+const [rotate, setRotation] = useState(true)
 
 
     
@@ -19,9 +19,6 @@ const [rotate, setRotation] = useState("active")
         setRotation (! rotate)
         console.log(rotate)
 
-        if(rotate === true){
-console.log("okkk")        }
-
         }
         
     
@@ -32,10 +29,12 @@ console.log("okkk")        }
 
     return (
     
-        <div className="collapse">
+        <div className="collapse" onClick={openContent}>
         <div className="collapse__bar">
             <p className="collapse__titre">{titre}</p>
-    <img src={arrow} alt="icone" className={rotate} onClick={openContent} />
+            { rotate ?
+    <img src={arrow} alt="icone" id="icone" />:
+    <img src={arrow} alt="icone" id="icone" className="active"/>}
     </div>
 { isOpen &&
     <div className="collapse__dropdown">

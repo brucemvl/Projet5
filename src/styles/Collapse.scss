@@ -13,15 +13,21 @@
         font-weight: 700;
         font-size: 1em;
         line-height: 34.22px;
-
-        .collapse__icon {
-            width: 1.5em;
-            height: 1em;
-            }
+        
 
     }
 }
+#icone {
+    width: 1.5em;
+    height: 1em;
+    transition-duration: 0.3s
 
+    }
+
+.active {
+    
+    transform: rotate(-180deg);
+    }
 
 .collapse__dropdown {
     transition-duration: 2s;
