@@ -10,7 +10,7 @@ function Apropos() {
             <Banner2 />
             <div className="conteneur__col">
                 {Listvaleurs.map(({ titre, texte }) =>
-                <Collapse titre={titre} texte={texte} key={"collapse"+{titre}} />
+                <Collapse titre={titre} texte={texte} key={titre + " collapse"} />
                 )}
             </div>
         </div>

@@ -11,10 +11,7 @@ function Collapse({ titre, texte }) {
     const openContent = () => {
         setisopen(!isOpen)
         setRotation(!rotate)
-        console.log(rotate)
-
     }
-
 
     return (
 

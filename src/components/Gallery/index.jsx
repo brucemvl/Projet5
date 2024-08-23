@@ -11,8 +11,7 @@ return(
             {logements.map(({id, cover, title})=>
             <div key={id+"key"} className="conteneur__carte">
                 <Cartelogement cover={cover} title={title} id={id}/>
-
-            </div>)}
+             </div>)}
         </ul>
         
     </section>

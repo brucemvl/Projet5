@@ -4,11 +4,11 @@ import Carrousel from "../Carrousel"
 
 function Fiche({ cover, title, location, host, hostpicture, tags, rating, pictures }) {
     const motscles = tags.map((tag) =>
-        <div className="tag" key={{ tag } + { title }}>{tag}</div>)
+        <div className="tag" key={title + tag}>{tag}</div>)
 
     const range = [1, 2, 3, 4, 5]
     const note = range.map((num) => (
-        <span key={{ num } + "note"} className={rating > num ? "on" : ""}>★</span>
+        <span key={num + "key"} className={rating > num ? "on" : ""}>★</span>
     ))
 
     return (
@@ -16,7 +16,7 @@ function Fiche({ cover, title, location, host, hostpicture, tags, rating, pictur
             <Carrousel pictures={pictures} />
             <div className="infos">
                 <div className="titre">
-                    <p className="name">{title}</p>
+                    <h1 className="name">{title}</h1>
                     <p className="localisation">{location}</p>
                     <div className="tags">{motscles}</div>
                 </div>

@@ -13,7 +13,7 @@ function FicheLogement() {
             <Fiche cover={logement.cover} title={logement.title} location={logement.location} host={logement.host.name} hostpicture={logement.host.picture} tags={logement.tags} rating={logement.rating} pictures={logement.pictures} />
             < div className="conteneur__collapse">
                 <Collapse titre="Description" texte={logement.description} />
-                <Collapse titre="Equipement" texte={logement.equipments.map((equipement) => <li key={{ equipement } + { id }}>{equipement}</li>)} />
+                <Collapse titre="Equipement" texte={logement.equipments.map((equipement) => <li key={equipement + id}>{equipement}</li>)} />
             </div>
         </div>
     )

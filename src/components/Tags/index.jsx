@@ -6,7 +6,7 @@ function Tags(){
 
         <ul className="tags">
             {logements.map((tag)=>
-            <li key={{tag}+{id}}>{tag}</li>)}
+            <li key={tag + id}>{tag}</li>)}
 
         </ul>
     )

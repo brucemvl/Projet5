@@ -7,7 +7,7 @@ function Cartelogement({ title, cover, id }) {
   return (
 
     <Link className="lien" to={`/Fiche/${id}`} >
-      <li key={id} className="carte" >
+      <li  className="carte" >
         <img className="carte__img" src={cover} alt={title + "photo"} />
         <p className="carte__txt">{title}</p>
       </li>

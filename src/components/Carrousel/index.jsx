@@ -3,7 +3,6 @@ import Vectorleft from "../../assets/Vectorleft.png"
 import Vectorright from "../../assets/Vectorright.png"
 
 function Carrousel({ pictures }) {
-    console.log(pictures)
 
     const [currentPicture, setCurrentPicture] = useState(0)
 
@@ -27,21 +26,17 @@ function Carrousel({ pictures }) {
 
     return (
         <div className="fiche__carrousel">
-
-
             {pictures.map((picture, i) => (
-
-
-                <img key={picture} className={"fiche__carrousel__img" + activatePicture(i)} src={picture} alt="carrousel" />
-
+                <img key={picture + " key"} className={"fiche__carrousel__img" + activatePicture(i)} src={picture} alt="carrousel" />
             ))}
+
             <div className="fiche__carrousel__buttons">
                 <img alt="arrowleft" onClick={prev} src={Vectorleft} />
                 <img alt="arrowright" onClick={next} src={Vectorright} />
             </div>
+
             <div className="fiche__carrousel__indice">{currentPicture + 1}/{pictures.length}</div>
         </div>
-
 
     )
 }
