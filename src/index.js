@@ -17,7 +17,8 @@ ReactDOM.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/*" element={<Error />} />
-                <Route path='/Fiche/:id' element={<FicheLogement />} />
+                <Route path="/Fiche/:id" element={<FicheLogement />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         <Footer />
     </Router>
