@@ -1,5 +1,5 @@
-import "../../styles/Collapse.scss"
-import arrow from "../../assets/Vector.png"
+import "../styles/Collapse.scss"
+import arrow from "../assets/Vector.png"
 import React, { useState } from "react"
 
 

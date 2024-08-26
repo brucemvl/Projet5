@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
-import Fiche from "../../components/Fiche"
+import Fiche from "../../components/Fiche.jsx"
 import { logements } from "../../datas/logements"
-import Collapse from "../../components/Collapse"
+import Collapse from "../../components/Collapse.jsx"
 
 function FicheLogement() {
 

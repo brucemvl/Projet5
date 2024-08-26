@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Vectorleft from "../../assets/Vectorleft.png"
-import Vectorright from "../../assets/Vectorright.png"
+import Vectorleft from "../assets/Vectorleft.png"
+import Vectorright from "../assets/Vectorright.png"
 
 function Carrousel({ pictures }) {
 

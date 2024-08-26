@@ -1,5 +1,5 @@
-import "../../styles/Fiche.scss"
-import Carrousel from "../Carrousel"
+import "../styles/Fiche.scss"
+import Carrousel from "./Carrousel"
 
 
 function Fiche({ cover, title, location, host, hostpicture, tags, rating, pictures }) {
