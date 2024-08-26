@@ -2,11 +2,17 @@ import { useParams } from "react-router-dom"
 import Fiche from "../../components/Fiche.jsx"
 import { logements } from "../../datas/logements"
 import Collapse from "../../components/Collapse.jsx"
+import Error from "../Error"
 
 function FicheLogement() {
 
     const { id } = useParams();
     const logement = logements.find((logement) => logement.id === id)
+
+if(!logement){
+    return <Error />
+}    
+    
 
     return (
         <div className="blocpage__fiche">
